@@ -1,0 +1,29 @@
+//need to package our code.
+package main
+
+import "fmt"
+
+//format package for printing.
+
+//create a function
+func calc(x int, y int) (int, int) {
+	var out = x + y
+	var out2 = x - y
+	return out, out2
+}
+
+//Another way of returning the values-
+func calci(x int, y int) (out, out2 int) {
+	out = x + y
+	out2 = x - y
+	return
+}
+
+//main function to tell the beginning of the code.
+func main() {
+	var num1 int = 6
+	var num2 int = 8
+	result1, result2 := calc(num1, num2)
+	result3, result4 := calci(num1, num2)
+	fmt.Print(result1, result2, result3, result4)
+}
